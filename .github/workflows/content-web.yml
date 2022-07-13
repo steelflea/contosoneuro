@@ -48,7 +48,7 @@ jobs:
         push: true
         tags: |
           ${{ env.containerRegistry }}/${{ env.imageRepository }}:${{ env.tag }}
-          ${{ env.containerRegistry }}/${{ env.imageRepository }}:CItest
+          ${{ env.containerRegistry }}/${{ env.imageRepository }}:latest
   build-and-push-helm-chart:
     name: Build and Push Helm Chart
     runs-on: ubuntu-latest
